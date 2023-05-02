@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLayout"
+    tools:context=".ui.movie.BillboardFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_pad"
+        android:text="Billboard"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="@dimen/middle_pad"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="@dimen/middle_pad"
+        android:background="@color/cardLayout"
+        android:orientation="horizontal"
+
+        app:layout_constraintCircleRadius="@dimen/small_pad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_pad"
+            android:layout_marginRight="@dimen/small_pad"
+            android:layout_weight="0"
+            android:src="@drawable/star_wars" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Star Wars episodio 3: la venganza de los sith"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9.8"
+                android:textColor="@color/calification"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/middle_pad"
+        android:background="@color/cardLayout"
+
+        android:orientation="horizontal"
+        app:layout_constraintCircleRadius="@dimen/small_pad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <ImageView
+            android:id="@+id/movie2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_pad"
+            android:layout_marginRight="@dimen/small_pad"
+            android:layout_weight="0"
+            android:src="@drawable/harry_potter" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harry Potter y la Piedra Filosofal"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9.5"
+                android:textColor="@color/calification"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddMovie"
+        android:layout_width="62dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="+"
+        android:textColor="@color/backgroundLayout"
+        android:textSize="30dp"
+        app:circularflow_defaultRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="645dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

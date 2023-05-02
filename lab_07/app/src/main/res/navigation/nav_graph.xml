@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/billboardFragment">
+
+    <fragment
+        android:id="@+id/newMovieFragment"
+        android:name="com.example.laboratorio_06.ui.movie.NewMovieFragment"
+        android:label="fragment_new_movie"
+        tools:layout="@layout/fragment_new_movie" />
+    <fragment
+        android:id="@+id/billboardFragment"
+        android:name="com.example.laboratorio_06.ui.movie.BillboardFragment"
+        android:label="fragment_billboard"
+        tools:layout="@layout/fragment_billboard" />
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.example.laboratorio_06.ui.movie.MovieFragment"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie" />
+</navigation>
